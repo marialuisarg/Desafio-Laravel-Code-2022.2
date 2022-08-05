@@ -5,6 +5,7 @@
 | [Objetivos do repositorio](#objetivos-do-repositorio) |
 | [Proposito do desafio](#proposito-do-desafio) |
 | [Link para o desafio](#link-para-o-desafio) |
+| [Link para a trilha de Laravel](#link-para-a-trilha-de-laravel) |
 | [Como executar o projeto inicial](#como-executar-o-projeto-inicial) |
 
 ## Objetivos do repositorio
@@ -16,6 +17,10 @@ Proposito do desafio: ......................;
 
 ## Link para o desafio
 Link para o desafio: .......................;
+<br>
+
+## Link para a trilha de Laravel
+Link para a trilha de Laravel: https://drive.google.com/drive/folders/16U7EIQ58v3ZgeTE-Eh3ivZ_lKretVEFc?usp=sharing
 <br>
 
 ## Como executar o projeto inicial
