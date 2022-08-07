@@ -13,13 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
-})->middleware('auth');
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/', function () {
+        return view('dashboard');
+    })/*->middleware('auth')*/;
+    
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })/*->middleware(['auth'])*/->name('dashboard');
+    
+});
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
 Route::get('/dale', function() {
     return view('dale');
