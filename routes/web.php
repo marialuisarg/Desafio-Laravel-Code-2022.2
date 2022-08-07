@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['auth', 'verified'])->group(function () {
+
+    // >>> insira suas rotas aqui !!!!! <<<
+    
     Route::get('/', function () {
         return view('dashboard');
     })/*->middleware('auth')*/;
