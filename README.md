@@ -7,7 +7,7 @@
 | [Link para o desafio](#link-para-o-desafio) |
 | [Link para a trilha de Laravel](#link-para-a-trilha-de-laravel) |
 | [Como executar o projeto inicial](#como-executar-o-projeto-inicial) |
-| [Como configurar o .env para envio de email](#como-configurar-o-.env-para-envio-de-email) |
+| [Como configurar o env para envio de email](#como-configurar-o-env-para-envio-de-email) |
 
 
 ## Objetivos do repositorio
