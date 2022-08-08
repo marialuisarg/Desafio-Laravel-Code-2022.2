@@ -34,8 +34,9 @@ Link para a trilha de Laravel: https://drive.google.com/drive/folders/16U7EIQ58v
 5. Crie um arquivo .env na pasta raiz e após isso copie o conteudo do .env.example para dentro do arquivo .env;
 6. Crie uma key com `php artisan key:generate`. A key servira para as hashes;
 7. Crie um banco de dados `sql` com o nome de `laravel_desafio_code`;
-8. Instale o npm com `npm install` e depois rode `npm run dev` e `npm run build`;
-9. Rode o comando: `php artisan serve` para iniciar o servidor;
+8. Rode as migrations com o comando php artisan migrate;
+9. Instale o npm com `npm install` e depois rode `npm run dev` e `npm run build`;
+10. Rode o comando: `php artisan serve` para iniciar o servidor;
 
 ## Como configurar o .env para envio de email
 \* Essa configuração é primordial para o sistema, uma vez que um usuario cadastrado só pode utilizar o sistema após verificar o email
