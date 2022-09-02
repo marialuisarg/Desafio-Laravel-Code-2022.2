@@ -56,6 +56,9 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
 
+    Route::get('produtos', [ProductsController::class, 'index'])
+    ->name('produtos.index');
+
     Route::post('produtos/salvar', [ProductsController::class, 'store'])
                 ->name('salvarprodutos');
 });

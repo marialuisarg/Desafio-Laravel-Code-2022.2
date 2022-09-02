@@ -26,9 +26,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('dashboard');
     })/*->middleware(['auth'])*/->name('dashboard');
 
-    Route::get('/produtos', function () {
-        return view('produtos.index');
-    })/*->middleware(['auth'])*/->name('produtos.index');
+    // Route::get('/produtos', function () {
+    //     return view('produtos.index');
+    // })/*->middleware(['auth'])*/->name('produtos.index');
 
     Route::get('/produtos/cadastro', function () {
         return view('produtos.cadastro');
