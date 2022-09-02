@@ -26,10 +26,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('dashboard');
     })/*->middleware(['auth'])*/->name('dashboard');
 
-    // Route::get('/produtos', function () {
-    //     return view('produtos.index');
-    // })/*->middleware(['auth'])*/->name('produtos.index');
-
     Route::get('/produtos/cadastro', function () {
         return view('produtos.cadastro');
     })/*->middleware(['auth'])*/->name('produtos.cadastro');
@@ -49,10 +45,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/produto/cadastro', function () {
         return view('produto.cadastro');
     })/*->middleware(['auth'])*/->name('produto.cadastro');
-
-    Route::get('/usuarios', function () {
-        return view('usuarios.index');
-    })/*->middleware(['auth'])*/->name('usuarios.index');
 
     Route::get('/usuarios/cadastro', function () {
         return view('usuarios.cadastro');

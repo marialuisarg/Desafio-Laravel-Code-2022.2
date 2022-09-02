@@ -9,6 +9,7 @@ use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -57,8 +58,11 @@ Route::middleware('auth')->group(function () {
                 ->name('logout');
 
     Route::get('produtos', [ProductsController::class, 'index'])
-    ->name('produtos.index');
+                ->name('produtos.index');
 
     Route::post('produtos/salvar', [ProductsController::class, 'store'])
                 ->name('salvarprodutos');
+
+    Route::get('usuarios', [UsersController::class, 'index'])
+                ->name('usuarios.index');   
 });

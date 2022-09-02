@@ -16,10 +16,13 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($products as $product)
+                        <tr>
+                            <td>{{$product->nome}}</td>
+                            <td>R$ {{$product->preco}}</td>
+                        </tr>
+                    @endforeach
                     <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    </tr>
                 </tbody>
             </table>
         </x-table-card>
