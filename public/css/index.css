@@ -38,7 +38,7 @@ th {
 
 .btn-basic {
     --bs-btn-color: #fff;
-    --bs-btn-bg: var(--golden-brown);
+    --bs-btn-bg: var(--raw-sienna) !important;
     --bs-btn-border-color: var(--golden-brown);
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: var(--raw-sienna);
