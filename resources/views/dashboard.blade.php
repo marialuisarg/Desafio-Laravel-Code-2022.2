@@ -15,21 +15,21 @@
                 <div class="card bg-black text-white shadow-lg rounded text-center m-3" style="border-style:none;">
                     <img class="card-img" src="{{ asset('img/doces-1-dark.jpg') }}" alt="Card image">
                     <div class="card-img-overlay d-flex text-center">
-                        <a href="{{ route('produtos') }}" class="card-text align-items-center d-flex mx-auto" style="color: #F3FFB6 !important; font-weight:bold;">ESTOQUE</a>
+                        <a href="{{ route('estoque.index') }}" class="card-text align-items-center d-flex mx-auto">ESTOQUE</a>
                     </div>
                 </div>
 
                 <div class="card bg-black text-white shadow-lg rounded text-center m-3" style="border-style:none;">
                     <img class="card-img" src="{{ asset('img/doces-2-dark.jpg') }}" alt="Card image">
                     <div class="card-img-overlay d-flex text-center">
-                        <a href="{{ route('produtos') }}" class="card-text align-items-center d-flex mx-auto" style="color: #F3FFB6 !important; font-weight:bold;">PRODUTOS</a>
+                        <a href="{{ route('produtos.index') }}" class="card-text align-items-center d-flex mx-auto">PRODUTOS</a>
                     </div>
                 </div>
 
                 <div class="card bg-black text-white shadow-lg rounded text-center m-3 my-auto" style="border-style:none;">
                     <img class="card-img" src="{{ asset('img/doces-3-dark.jpg') }}" alt="Card image">
                     <div class="card-img-overlay d-flex text-center">
-                        <a href="{{ route('produtos') }}" class="card-text align-items-center d-flex mx-auto" style="color: #F3FFB6 !important; font-weight:bold;">PROMOÇÃO DO MÊS</a>
+                        <a href="{{ route('produtos.index') }}" class="card-text align-items-center d-flex mx-auto">PROMOÇÃO DO MÊS</a>
                     </div>
                 </div>
             </div>

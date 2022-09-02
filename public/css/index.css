@@ -23,7 +23,18 @@ h1 {
     padding: 0;
   }
 
+a {
+    color: var(--russian-green);
+  }
 
+a:hover {
+    color: var(--russian-green);
+    font-weight: bold;
+  }
+
+th {
+  color: var(--raw-sienna);
+}
 
 .btn-basic {
     --bs-btn-color: #fff;

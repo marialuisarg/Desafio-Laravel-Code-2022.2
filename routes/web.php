@@ -27,12 +27,36 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })/*->middleware(['auth'])*/->name('dashboard');
 
     Route::get('/produtos', function () {
-        return view('produtos');
-    })/*->middleware(['auth'])*/->name('produtos');
+        return view('produtos.index');
+    })/*->middleware(['auth'])*/->name('produtos.index');
 
     Route::get('/produtos/cadastro', function () {
-        return view('cadastro-produtos');
-    })/*->middleware(['auth'])*/->name('produtos/cadastro');
+        return view('produtos.cadastro');
+    })/*->middleware(['auth'])*/->name('produtos.cadastro');
+
+    Route::get('/estoque', function () {
+        return view('estoque.index');
+    })/*->middleware(['auth'])*/->name('estoque.index');
+
+    Route::get('/estoque/cadastro', function () {
+        return view('estoque.cadastro');
+    })/*->middleware(['auth'])*/->name('estoque.cadastro');
+
+    Route::get('/produto', function () {
+        return view('produto.index');
+    })/*->middleware(['auth'])*/->name('produto.index');
+
+    Route::get('/produto/cadastro', function () {
+        return view('produto.cadastro');
+    })/*->middleware(['auth'])*/->name('produto.cadastro');
+
+    Route::get('/usuarios', function () {
+        return view('usuarios.index');
+    })/*->middleware(['auth'])*/->name('usuarios.index');
+
+    Route::get('/usuarios/cadastro', function () {
+        return view('usuarios.cadastro');
+    })/*->middleware(['auth'])*/->name('usuarios.cadastro');
     
 });
 
