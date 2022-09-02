@@ -6,24 +6,35 @@
     </x-slot>
 
     <div class="py-12">
+        <div class="row mx-auto text-center mb-5 mt-4">
+            <h1>Olá, {{Auth::user()->name}}! Bem-vindo(a) ao BomBom da Lu!</h1>
+        </div>
+    
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="row">
-                <div class="col md-4">
-                    <div class="card bg-white text-white shadow-lg rounded" style="border-style:none;">
-                        <img class="card-img" src="{{ asset('img/doces-1.jpg') }}" alt="Card image">
+            <div class = "card-group">
+                <div class="card bg-black text-white shadow-lg rounded text-center m-3" style="border-style:none;">
+                    <img class="card-img" src="{{ asset('img/doces-1-dark.jpg') }}" alt="Card image">
+                    <div class="card-img-overlay d-flex text-center">
+                        <a href="{{ route('produtos') }}" class="card-text align-items-center d-flex mx-auto" style="color: #F3FFB6 !important; font-weight:bold;">ESTOQUE</a>
                     </div>
                 </div>
-                <div class="col md-4">
-                    <div class="card bg-dark text-white shadow-lg rounded" style="border-style:none;">
-                        <img class="card-img" src="{{ asset('img/doces-2.jpg') }}" alt="Card image">
+
+                <div class="card bg-black text-white shadow-lg rounded text-center m-3" style="border-style:none;">
+                    <img class="card-img" src="{{ asset('img/doces-2-dark.jpg') }}" alt="Card image">
+                    <div class="card-img-overlay d-flex text-center">
+                        <a href="{{ route('produtos') }}" class="card-text align-items-center d-flex mx-auto" style="color: #F3FFB6 !important; font-weight:bold;">PRODUTOS</a>
                     </div>
                 </div>
-                <div class="col md-4">
-                    <div class="card bg-dark text-white shadow-lg rounded" style="border-style:none;">
-                        <img class="card-img" src="{{ asset('img/doces-3.jpg') }}" alt="Card image">
+
+                <div class="card bg-black text-white shadow-lg rounded text-center m-3 my-auto" style="border-style:none;">
+                    <img class="card-img" src="{{ asset('img/doces-3-dark.jpg') }}" alt="Card image">
+                    <div class="card-img-overlay d-flex text-center">
+                        <a href="{{ route('produtos') }}" class="card-text align-items-center d-flex mx-auto" style="color: #F3FFB6 !important; font-weight:bold;">PROMOÇÃO DO MÊS</a>
                     </div>
                 </div>
             </div>
+                
+                
         </div>
     </div>
 </x-app-layout>

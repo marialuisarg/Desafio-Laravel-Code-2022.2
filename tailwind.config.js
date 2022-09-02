@@ -9,6 +9,14 @@ module.exports = {
     ],
 
     theme: {
+        colors: {
+            'goldenbrown': '#99621E',
+            'rawsienna': '#D38B5D',
+            'lemonyellow': '#F3FFB6',
+            'russiangreen': '#739E82',
+            'huntergreen': '#2C5530',
+          },
+
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
