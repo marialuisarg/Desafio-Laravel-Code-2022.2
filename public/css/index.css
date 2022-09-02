@@ -1,0 +1,92 @@
+:root {
+    --golden-brown: #99621E;
+    --raw-sienna: #D38B5D;
+    --lemon-yellow: #F3FFB6;
+    --russian-green: #739E82;
+    --hunter-green: #2C5530;
+  }
+
+body {
+    background-color: var(--lemon-yellow);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+h1 {
+    color: var(--golden-brown);
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+.btn-basic {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--golden-brown);
+    --bs-btn-border-color: var(--golden-brown);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--raw-sienna);
+    --bs-btn-hover-border-color: var(--raw-sienna);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--golden-brown);
+    --bs-btn-active-border-color: var(--golden-brown);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--golden-brown);
+    --bs-btn-disabled-border-color: var(--golden-brown);
+  }
+
+a {
+    text-decoration: none !important;
+}
+
+.btn-pequeno {
+    width: 40%;
+}
+
+.btn-medio {
+    width: 70%;
+}
+
+.btn-grande {
+    width: 100%;
+}
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+    position: fixed; 
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 2s;
+
+}
+.carousel .one {
+    background: url(/img/doces-3.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(/img/doces-2.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url(/img/doces-1.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+/* .carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+} */

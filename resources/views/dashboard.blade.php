@@ -7,9 +7,21 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
+            <div class="row">
+                <div class="col md-4">
+                    <div class="card bg-white text-white shadow-lg rounded" style="border-style:none;">
+                        <img class="card-img" src="{{ asset('img/doces-1.jpg') }}" alt="Card image">
+                    </div>
+                </div>
+                <div class="col md-4">
+                    <div class="card bg-dark text-white shadow-lg rounded" style="border-style:none;">
+                        <img class="card-img" src="{{ asset('img/doces-2.jpg') }}" alt="Card image">
+                    </div>
+                </div>
+                <div class="col md-4">
+                    <div class="card bg-dark text-white shadow-lg rounded" style="border-style:none;">
+                        <img class="card-img" src="{{ asset('img/doces-3.jpg') }}" alt="Card image">
+                    </div>
                 </div>
             </div>
         </div>
