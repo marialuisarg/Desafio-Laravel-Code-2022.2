@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Products extends Model
+class StockProduct extends Model
 {
     use HasFactory;
 
-    protected $table = 'products';
+    protected $table = 'stock';
+
     protected $guarded = [];  
 
-    public function estoque() 
+    public function produto() 
     {
-        return $this->hasOne(StockProduct::class, 'id');
+        return $this->belongsTo(Products::class, 'product_id');
     }
 }

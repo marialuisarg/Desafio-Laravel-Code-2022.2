@@ -30,9 +30,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('produtos.cadastro');
     })/*->middleware(['auth'])*/->name('produtos.cadastro');
 
-    Route::get('/estoque', function () {
-        return view('estoque.index');
-    })/*->middleware(['auth'])*/->name('estoque.index');
+    // Route::get('/estoque', function () {
+    //     return view('estoque.index');
+    // })/*->middleware(['auth'])*/->name('estoque.index');
 
     Route::get('/estoque/cadastro', function () {
         return view('estoque.cadastro');
